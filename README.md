@@ -1,2 +1,4 @@
-# react-traval
-travel
+# Traval 
+
+### `npm start`
+
