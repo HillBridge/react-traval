@@ -1,5 +1,4 @@
 import React from "react";
-// import logo from '../../assets/logo.svg'
 import { Layout, Typography, Input, Menu, Button, Dropdown } from 'antd'
 import { GlobalOutlined } from '@ant-design/icons'
 import styles from "./Header.module.css";

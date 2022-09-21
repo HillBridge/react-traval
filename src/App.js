@@ -5,10 +5,8 @@ import { Header, Footer } from "./components";
 function App() {
   return (
     <div className={styles.App}>
-      
       <Header></Header>
       <Footer></Footer>
-      
     </div>
   )
 }
