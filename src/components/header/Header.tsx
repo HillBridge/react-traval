@@ -2,6 +2,7 @@ import React from "react";
 import { Layout, Typography, Input, Menu, Button, Dropdown } from 'antd'
 import { GlobalOutlined } from '@ant-design/icons'
 import styles from "./Header.module.css";
+import logo from "../../assets/images/logo.svg";
 
 export const Header: React.FC = () => {
   return (
@@ -31,7 +32,7 @@ export const Header: React.FC = () => {
       </div>
       <div className={styles['app-header']}>
         <Layout.Header className={styles['main-header']}>
-          {/* <img src={logo} alt="logo" className={styles['App-logo']} /> */}
+          <img src={logo} alt="logo" className={styles['App-logo']} />
           <Typography.Title level={3} className={styles.title}>
             慕课旅游网
           </Typography.Title>
