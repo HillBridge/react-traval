@@ -17,7 +17,7 @@ import styles from "./HomePage.module.css";
 export class HomePage extends React.Component {
   render(): React.ReactNode {
     return (
-      <>
+      <div>
         <Header></Header>
         <div className={styles['page-content']}>
           <Row style={{ marginTop: 20 }}>
@@ -52,7 +52,7 @@ export class HomePage extends React.Component {
           <BusinessPartner></BusinessPartner>
         </div>
         <Footer></Footer>
-      </>
+      </div>
     )
   }
 }
