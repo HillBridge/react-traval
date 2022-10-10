@@ -3,9 +3,11 @@ import { Layout, Typography, Input, Menu, Button, Dropdown } from 'antd'
 import { GlobalOutlined } from '@ant-design/icons'
 import styles from "./Header.module.css";
 import logo from "../../assets/images/logo.svg";
+import { useNavigate } from "react-router-dom";
 
 
 export const Header: React.FC = () => {
+  const navigate = useNavigate()
   return (
     <>
       <div className={styles['top-header']}>
@@ -26,8 +28,8 @@ export const Header: React.FC = () => {
             语言
           </Dropdown.Button>
           <Button.Group className={styles['button-group']}>
-            <Button>注册</Button>
-            <Button>登陆</Button>
+            <Button onClick={() => navigate("/register")}>注册</Button>
+            <Button onClick={() => navigate("/login")}>登陆</Button>
           </Button.Group>
         </div>
       </div>
